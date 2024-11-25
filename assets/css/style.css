@@ -39,8 +39,9 @@ img{
     padding: 10px;
 }
 
-@media (hover: hover) {
-    button:hover {
-        background-color: blue;
+@media (max-width: 768px) {
+    .btn:hover {
+      background-color: initial;
+      transform: none;
     }
-}
+  }
