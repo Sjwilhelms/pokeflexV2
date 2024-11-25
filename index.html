@@ -17,10 +17,6 @@
             <div class="row">
                 <div class="col-12">
                     <h1>Guess the Pokemon game!</h1>
-                    <h3>Can you guess the Pokemon?</h3>
-                    <p>Press Enter to input your guess</p>
-                    <p>Press Right Arrow to get a new Pokemon</p>
-                    <p>Press Left Arrow to clear the user input</p>
                     <p>Are you ready to start catching Pokemon?</p>
                     <button id="start" class="btn" onclick="start()">Let's Go!</button>
                 </div>
@@ -31,15 +27,13 @@
     </div>
     <!-- this is the game area -->
     <div id="gameContainer" class="hide">
-
-
         <!-- the sprite of pokemon displays here -->
         <div class="spriteArea ">
             <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none">
         </div>
         <div class="container-fluid">
             <div class="col-12">
-                <!-- user inputs and submits guess. Try a new pokemon option -->
+                <!-- the player selects from a multiple choices -->
                 <div id="choiceButtons">
                     <h2 id="question">Which Pokémon is this?</h2>
                     <div id="choicesContainer">
