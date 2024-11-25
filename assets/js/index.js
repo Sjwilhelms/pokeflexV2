@@ -119,6 +119,7 @@ async function fetchData() {
 
             // Add click event listener
             button.onclick = () => checkAnswer(button, pokemonName);
+            window.scrollTo(0, 0);
         });
 
 
@@ -146,7 +147,7 @@ function shuffleArray(array) {
     return array;
 }
 
-function checkAnswer(button, correctAnswer) {
+function checkAnswer(button) {
     if (!playing) return; // Prevent interaction if the game is not active
 
     const isCorrect = button.dataset.correct === "true";

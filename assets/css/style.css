@@ -38,9 +38,9 @@ img{
     margin: 10px;
     padding: 10px;
 }
-#guess{
-    width: 60vw;
-    width: 60%;
-    text-align: center;
-    margin: 10px;
+
+@media (hover: hover) {
+    button:hover {
+        background-color: blue;
+    }
 }
