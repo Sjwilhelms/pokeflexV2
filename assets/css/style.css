@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Press+Start+2P&display=swap');
+
+:root{
+    --bg-main: #99ee95;
+    --ft-main: #0b1157;
+}
+*{
+    font-family: "Press Start 2P";
+    color: var(--ft-main);
+    background-color: var(--bg-main);
+    
+}
+.hide{
+    display: none !important;
+}
+
+#gameContainer, #gameIntro, #gameOutro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+img{
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+}
+.btn{
+    background-color: var(--ft-main);
+    color: var(--bg-main);
+    margin: 10px;
+    padding: 10px;
+}
+#guess{
+    width: 60vw;
+    width: 60%;
+    text-align: center;
+    margin: 10px;
+}
