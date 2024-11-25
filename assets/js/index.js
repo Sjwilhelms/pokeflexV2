@@ -119,7 +119,7 @@ async function fetchData() {
 
             // Add click event listener
             button.onclick = () => checkAnswer(button, pokemonName);
-            window.scrollTo(0, 0);
+            
         });
 
 
@@ -165,5 +165,6 @@ function checkAnswer(button) {
     }
 
     // Load the next question
+    window.scrollTo(0, document.body.scrollHeight);
     fetchData();
 }
