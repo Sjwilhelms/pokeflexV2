@@ -10,6 +10,18 @@ let score = 0;
 let timeLeft = 60;
 let timerInterval;
 
+const buttons = document.querySelectorAll('.btn');
+
+buttons.forEach(button => {
+  button.addEventListener('touchstart', function() {
+    this.classList.add('touch-active');
+  });
+  
+  button.addEventListener('touchend', function() {
+    this.classList.remove('touch-active');
+  });
+});
+
 fetchWrong()
 
 /** start the game, close the introduction and fetch a pokemon */

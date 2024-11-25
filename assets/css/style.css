@@ -39,9 +39,3 @@ img{
     padding: 10px;
 }
 
-@media (max-width: 768px) {
-    .btn:hover {
-      background-color: initial;
-      transform: none;
-    }
-  }
