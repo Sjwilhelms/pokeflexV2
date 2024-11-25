@@ -74,7 +74,6 @@ async function fetchWrong() {
         const data = await response.json();
         // populate global wrongAnswers array
         wrongAnswers.push(...data.results);
-        console.log(wrongAnswers);
     }
     catch (error) {
         console.error(error);
