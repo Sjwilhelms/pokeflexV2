@@ -71,7 +71,7 @@ function end() {
         <p id="analysis">You got ${score} pokemon correct in 60 seconds</p>
         <p><a href="https://github.com/Sjwilhelms" target="_blank">Find me on Github</a></p>
         <p id="reward">No poke-reward for you this time...</p>
-        <button id="playAgain" class="btn" onclick="start()">Let's Go Again!</button>
+        <button id="playAgain" class="button" onclick="start()">Let's Go Again!</button>
     `}
 }
 async function fetchWrong() {
