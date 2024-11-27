@@ -126,7 +126,8 @@ async function fetchData() {
         // Map choices to buttons
         const buttons = document.querySelectorAll(".choiceButton");
         buttons.forEach((button, index) => {
-            button.textContent = choices[index]; // Set button text
+            const choice = choices[index];
+            button.textContent = choice.charAt(0).toUpperCase() + choice.slice(1); // Set button text
             button.dataset.correct = choices[index] === pokemonName; // Add a data attribute to indicate correctness
 
             // Add click event listener
