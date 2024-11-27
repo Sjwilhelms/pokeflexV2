@@ -32,7 +32,7 @@ img{
     height: 200px;
     width: 200px;
 }
-.btn{
+.button{
     background-color: var(--ft-main);
     color: var(--bg-main);
     margin: 10px;
