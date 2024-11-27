@@ -166,12 +166,12 @@ function checkAnswer(button) {
     const isCorrect = button.dataset.correct === "true";
     if (isCorrect) {
         score++;
-        resultBody.textContent = `The correct answer was ${pokemonName}`;
+        resultBody.textContent = `The correct answer was ${pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1)}`;
         scoreboard.textContent = `You've guessed correctly ${score} times`;
         resultBody.style.display = "block";
         scoreboard.style.display = "block";
     } else {
-        resultBody.textContent = `The correct answer was ${pokemonName}`;
+        resultBody.textContent = `The correct answer was ${pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1)}`;
         scoreboard.textContent = `You've guessed correctly ${score} times`;
         resultBody.style.display = "block";
         scoreboard.style.display = "block";
