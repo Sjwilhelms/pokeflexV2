@@ -127,10 +127,12 @@ async function fetchData() {
         const buttons = document.querySelectorAll(".choiceButton");
         buttons.forEach((button, index) => {
             const choice = choices[index];
-            button.textContent = choice.charAt(0).toUpperCase() + choice.slice(1); // Set button text
-            button.dataset.correct = choices[index] === pokemonName; // Add a data attribute to indicate correctness
+             // make tge button text
+            button.textContent = choice.charAt(0).toUpperCase() + choice.slice(1);
+            // data attribute to indicate correctness
+            button.dataset.correct = choices[index] === pokemonName; 
 
-            // Add click event listener
+            // check answer
             button.onclick = () => checkAnswer(button, pokemonName);
             
         });
@@ -161,7 +163,8 @@ function shuffleArray(array) {
 }
 
 function checkAnswer(button) {
-    if (!playing) return; // Prevent interaction if the game is not active
+     // Prevent interaction if the game is not active
+    if (!playing) return;
 
     const isCorrect = button.dataset.correct === "true";
     if (isCorrect) {
